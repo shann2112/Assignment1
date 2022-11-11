@@ -4,15 +4,26 @@
 # Function: Perform a commit
 # Script: UpdateRemoteRepo.bat
 clear
+@echo off
 git status
+echo.
 echo '**************************************************'
 echo "Performing an add for all files in this directory"
+echo '**************************************************'
+echo.
 git add .
 git status
-echo '**************************************************'
-echo 'Enter the commit message:'
-read CommitMessage
-git commit -m "$CommitMessage"
+
+echo *** press [ctrl][c] to exit or any key to continue ***
+pause
+
+:: set variables to local
+
+SETLOCAL
+echo.
+set /p NAME=Enter the name of the project, then press [return]
+
+git commit -m "%NAME%"
 git status
 echo '**************************************************'
 echo 'Pushing to GITHUB repository'
