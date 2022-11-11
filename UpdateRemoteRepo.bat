@@ -27,6 +27,8 @@ git commit -m "%NAME%"
 git status
 echo '**************************************************'
 echo 'Pushing to GITHUB repository'
+git branch  -m main
+git remote add origin https://github.com/shann2112/Assignment1
 git push -u origin master
 echo '**************************************************'
 echo 'Done!
