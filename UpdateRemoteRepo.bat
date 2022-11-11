@@ -20,7 +20,7 @@ set /p NAME=Enter the name of the project, then press [return]
 echo '**************************************************'
 echo 'Pushing to GITHUB repository'
 
-git remote add origin https://github.com/shann2112/Assignment1
+:: git remote add origin https://github.com/shann2112/Assignment1
 git add .
 git commit -m "%NAME%"
 git push origin main
