@@ -2,7 +2,7 @@
 L00177543
 
 Michael Shannon Assignment 1
-This is the main files which runs our program
+This is the main file which runs our program
 It calls on the MAc Class to fin realtime mac manufacturers
 This program iterates through a text file and pulls back
 Ip, Mac andComputer text
